@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Navotas City</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Custom icon font-->
+    <link rel="stylesheet" href="css/fontastic.css">
+    <!-- Google fonts - Open Sans-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <!-- Fancybox-->
+    <link rel="stylesheet" href="vendor/@fancyapps/fancybox/jquery.fancybox.min.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="favicon.png">
+    <script src="https://kit.fontawesome.com/39e83a8be2.js" crossorigin="anonymous"></script>
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <header class="header">
+      <!-- Main Navbar-->
+      <nav class="navbar navbar-expand-lg">
+        <div class="search-area">
+          <div class="search-area-inner d-flex align-items-center justify-content-center">
+            <div class="close-btn"><i class="icon-close"></i></div>
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-8">
+                <form action="#">
+                  <div class="form-group">
+                    <input type="search" name="search" id="search" placeholder="What are you looking for?">
+                    <button type="submit" class="submit"><i class="icon-search-1"></i></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <!-- Navbar Brand -->
+          <div class="navbar-header d-flex align-items-center justify-content-between">
+            <!-- Navbar Brand --><a href="index.html" class="navbar-brand"><img src="img/homelogonew.png" class="img-fluid" alt="Responsive image" style="max-width: 200px;" ></a>
+            <!-- Toggle Button--> 
+            <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span></span><span></span><span></span></button>
+          </div>
+          <!-- Navbar Menu -->
+          <div id="navbarcollapse" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="index.html" class="nav-link active ">Home</a>
+              </li>
+
+              <li class="nav-item"><a href="history.html" class="nav-link ">History</a>
+              </li>
+
+              <li class="nav-item"><a href="HistoricalandHeritageSite.html" class="nav-link ">Historical and Heritage Site</a>
+              </li>
+
+              <li class="nav-item"><a href="NativeCustom.html" class="nav-link ">Native Custom</a>
+              </li>
+
+              <li class="nav-item"><a href="ReligionandtheirCeremonies.html" class="nav-link ">Religion and their Ceremonies</a>
+              </li> 
+
+              <li class="nav-item"><a href="aboutus.html" class="nav-link ">About Us</a>
+              </li>
+              
+              <!-- <li class="nav-item"><a href="blog.html" class="nav-link ">Blog</a>
+              </li>
+              <li class="nav-item"><a href="post.html" class="nav-link ">Post</a>
+              </li>
+              <li class="nav-item"><a href="#" class="nav-link ">Contact</a>
+              </li> -->
+            </ul>
+            <!-- <div class="navbar-text"><a href="#" class="search-btn"><i class="icon-search-1"></i></a></div>
+            <ul class="langs navbar-text"><a href="#" class="active">EN</a><span>           </span><a href="#">ES</a></ul> -->
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Hero Section-->
+    <!-- <section style="background: url(img/homebackground.jpg); background-size: cover; background-position: center center" class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <p class="text-center"><h1 style="font-size: 75px;"><b>Navotas City</b></h1></p>
+            <p class="text-justify"><h2>Fishing Capital Of the Philippines</h2></p>
+          </div>
+        </div><a href=".intro" class="continue link-scroll"><i class="fa fa-long-arrow-down"></i> Scroll Down</a>
+      </div>
+    </section> -->
+
+    
+    <div class='previewContainer'>
+
+      <img src='img/articleimages/navotasday.jpg' class='previewImage' hidden>
+      <video autoplay muted playsinline loop class='previewVideo'>
+          <source src='img/video/pangisdaan.mp4' type='video/mp4'>
+      </video>
+
+      <div class='previewOverlay'>
+          <section class="mainDetails">
+              <h3>Navotas Day</h3>
+
+              <div class="buttons">
+                  <button><i class="fas fa-play"></i>Play</button>
+                  <button onclick='volumeToggle(this)'><i class="fas fa-volume-mute"></i></button>
+              </div>
+            
+          </section>
+      </div>
+
+  </div>
+
+    
+
+    <!-- <section class="videoCOntainer">
+      <h3></h3>
+
+      <div class="video">
+        <video controls autoplay>
+       
+          
+        </video>
+      </div>
+      
+      
+    </section> -->
+
+    
+
+    <!-- Intro Section-->
+    <section class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="h3">Categories</h2>
+            <!-- <p class="text-big">Place a nice <strong>introduction</strong> here <strong>to catch reader's attention</strong>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderi.</p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="featured-posts no-padding-top">
+      <div class="container">
+        <!-- Post-->
+        <div class="row d-flex align-items-stretch">
+          <div class="text col-lg-7">
+            <div class="text-inner d-flex align-items-center">
+              <div class="content">
+                <header class="post-header">
+                  <!-- <div class="category"><a href="#">Business</a><a href="#">Technology</a></div><a href="post.html"> -->
+                    <h2 class="h4"><a href="history.html">History</a></h2></a>
+                </header>
+                <p>
+                  Every country or place around the globe have its own history and origin. In order to know more about a place, you have to know its history. Navotas is no different from other towns in the Philippines, with the place having its own history and its name having its own origin.</p>
+                <footer class="post-footer d-flex align-items-center">
+                  <p><a href="history.html">Read More</a></p> 
+                </footer>
+              </div>
+            </div>
+          </div>
+          <div class="image col-lg-5"><img src="img/history.jpg" alt="..." style="width: 420px;"></div>
+        </div>
+        <!-- Post        -->
+        <div class="row d-flex align-items-stretch">
+          <div class="image col-lg-5"><img src="img/heritage.png" alt="..." style="width: 420px;"></div>
+          <div class="text col-lg-7">
+            <div class="text-inner d-flex align-items-center">
+              <div class="content">
+                <header class="post-header">
+                  <!-- <div class="category"><a href="#">Business</a><a href="#">Technology</a></div><a href="post.html"> -->
+                    <h2 class="h4"><a href="HistoricalandHeritageSite.html">Historical and Heritage Site</a></h2></a>
+                </header>
+                <p>For generations, there are old infrastructures around Navotas City where you can visit the place if you are curious about the historical and heritage of the said city area. Besides of being the best fishing capital of the Philippines it has also many infrastructures that has historical background that are worth it to know and to share to other people.</p>
+                <footer class="post-footer d-flex align-items-center">
+                  <p><a href="HistoricalandHeritageSite.html">Read More</a></p>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Post                            -->
+        <div class="row d-flex align-items-stretch">
+          <div class="text col-lg-7">
+            <div class="text-inner d-flex align-items-center">
+              <div class="content">
+                <header class="post-header">
+                  <!-- <div class="category"><a href="#">Business</a><a href="#">Technology</a></div><a href="post.html"> -->
+                    <h2 class="h4"><a href="NativeCustom.html">Native and Custom</a></h2></a>
+                </header>
+                <p>Native custom is a traditional and widely accepted way of behaving or doing something that is specific to a particular society, place, or time. In this corner, there are various articles defined and explained the different practices common in Navotas City.</p>
+                <footer class="post-footer d-flex align-items-center">
+                  <p><a href="NativeCustom.html">Read More</a></p>
+                </footer>
+              </div>
+            </div>
+          </div>
+          <div class="image col-lg-5"><img src="img/nativecustoms.jpg" alt="..." style="width: 420px;"></div>
+        </div>
+
+        <div class="row d-flex align-items-stretch">
+          <div class="image col-lg-5"><img src="img/religionsandceremonies.png" alt="..." style="width: 420px;"></div>
+          <div class="text col-lg-7">
+            <div class="text-inner d-flex align-items-center">
+              <div class="content">
+                <header class="post-header">
+                  <!-- <div class="category"><a href="#">Business</a><a href="#">Technology</a></div><a href="post.html"> -->
+                    <h2 class="h4" ><a href="ReligionandtheirCeremonies.html">Religions and their Ceremonies</a></h2></a>
+                </header>
+                <p>Aside from Navotas being the best fishing capital in the Philippines, Navotas has its different cultures inside the city with the citizen and their different religions and ceremonies, there were many place of worships and fiestas that are being celebrated</p>
+                <footer class="post-footer d-flex align-items-center">
+                  <p><a href="ReligionandtheirCeremonies.html">Read More</a></p>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Divider Section-->
+    <!-- <section style="background: url(img/NavotasCoverImages/backgroundlanscape.jpg); background-size: cover; background-position: center; height: 200px;" class="divider">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+           
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- Latest Posts -->
+    <hr>
+    <section class="latest-posts"> 
+      <div class="container">
+        <header> 
+          <h2>Latest Article</h2>
+          <!-- <p class="text-big">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+        </header>
+        <div class="row">
+          <div class="post col-md-4">
+            <div class="post-thumbnail"><a href="SanJose.html"><img src="img/articleimages/sanjose.jpg" alt="..." class="img-fluid" style="height: 300px;"></a></div>
+            <div class="post-details">
+              <div class="post-meta d-flex justify-content-between">
+                <!-- <div class="date">20 May | 2016</div>
+                <div class="category"><a href="#">Business</a></div> -->
+              </div><a href="SanJose.html">
+                <h3 class="h4">SAN JOSE DE NAVOTAS PARISH CHURCH</h3></a>
+              
+            </div>
+          </div>
+
+          <div class="post col-md-4">
+            <div class="post-thumbnail"><a href="navotasRich&Resource.html"><img src="img/articleimages/navotasFishportComplex.jpg" alt="..." class="img-fluid" style="height: 300px;"></a></div>
+            <div class="post-details">
+              <div class="post-meta d-flex justify-content-between">
+                <!-- <div class="date">20 May | 2016</div>
+                <div class="category"><a href="#">Business</a></div> -->
+              </div><a href="navotasRich&Resource.html">
+                <h3 class="h4">Rich in Resource Fish</h3></a>
+              
+            </div>
+          </div>
+
+          <!-- <div class="post col-md-4">
+            <div class="post-thumbnail"><a href="./religion&ceremonies/pangisdaan.html"><img src="img/articleimages/pangisdaan-1.png" alt="..." class="img-fluid" style="height: 300px;"></a></div>
+            <div class="post-details">
+              <div class="post-meta d-flex justify-content-between">
+             
+              </div><a href="./religion&ceremonies/pangisdaan.html">
+                <h3 class="h4">Pangisdaan Festival</h3></a>
+              
+            </div>
+          </div> -->
+          <div class="post col-md-4">
+            <div class="post-thumbnail"><a href="./religion&ceremonies/navotasday.html"><img src="img/articleimages/navotasday.jpg" alt="..." class="img-fluid" style="height: 300px;"></a></div>
+            <div class="post-details">
+              <div class="post-meta d-flex justify-content-between">
+                <!-- <div class="date">20 May | 2016</div>
+                <div class="category"><a href="#">Business</a></div> -->
+              </div><a href="./religion&ceremonies/navotasday.html">
+                <h3 class="h4">Navotas Day</h3></a>
+              
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="row">
+          
+        </div>
+      </div>
+    </section>
+    <!-- Newsletter Section-->
+    <!-- <section class="newsletter no-padding-top">    
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Subscribe to Newsletter</h2>
+            <p class="text-big">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="col-md-8">
+            <div class="form-holder">
+              <form action="#">
+                <div class="form-group">
+                  <input type="email" name="email" id="email" placeholder="Type your email address">
+                  <button type="submit" class="submit">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- Gallery Section-->
+    <section class="gallery no-padding">    
+      <div class="row">
+        <div class="mix col-lg-3 col-md-3 col-sm-6">
+          <div class="item"><a href="img/NavotasCoverImages/picture1.jpg" data-fancybox="gallery" class="image"><img src="img/NavotasCoverImages/picture1.jpg" alt="..." class="img-fluid">
+              <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div></a></div>
+        </div>
+        <div class="mix col-lg-3 col-md-3 col-sm-6">
+          <div class="item"><a href="img/NavotasCoverImages/picture2.jpg" data-fancybox="gallery" class="image"><img src="img/NavotasCoverImages/picture2.jpg" alt="..." class="img-fluid">
+              <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div></a></div>
+        </div>
+        <div class="mix col-lg-3 col-md-3 col-sm-6">
+          <div class="item"><a href="img/NavotasCoverImages/picture3.jpg" data-fancybox="gallery" class="image"><img src="img/NavotasCoverImages/picture3.jpg" alt="..." class="img-fluid">
+              <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div></a></div>
+        </div>
+        <div class="mix col-lg-3 col-md-3 col-sm-6">
+          <div class="item"><a href="img/NavotasCoverImages/picture4.jpg" data-fancybox="gallery" class="image"><img src="img/NavotasCoverImages/picture4.jpg" alt="..." class="img-fluid">
+              <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div></a></div>
+        </div>
+      </div>
+
+      <div class="row">
+
+      </div>
+    </section>
+    <!-- Page Footer-->
+    <footer class="main-footer">
+     
+      <div class="copyrights">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p>&copy; 2017. All rights reserved. Your great site.</p>
+            </div>
+            <div class="col-md-6 text-right">
+              <p>Template By <a href="https://bootstrapious.com/p/bootstrap-carousel" class="text-white">Bootstrapious</a>
+                <!-- Please do not remove the backlink to Bootstrap Temple unless you purchase an attribution-free license @ Bootstrap Temple or support us at http://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :)                         -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/front.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
